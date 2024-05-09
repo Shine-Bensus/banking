@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarokya Bank</title>
+    <link rel="stylesheet" href="bank_register.css">
+</head>
+<body>
+    <!-- Registration -->
+    <center><h1>Welcome to Aarokya Bank</h1></center>
+    <div id="div1">
+        <h3>Registration</h3>
+        <input type="text" placeholder="Username" id="user"><br>
+        <input type="password" placeholder="Password" id="upass"><br>
+        <input type="password" placeholder="Confirm Password" id="confirm_pass"><br><br>
+        <button onclick="register()">Register</button>
+        <p onclick="login_page()">Already registered? Login</p><br>
+    </div>
+
+    <!-- Login Page -->
+    <div id="div2" style=" visibility: hidden;">
+        <h3>Login</h3>
+        <input type="text" placeholder="Username" id="user1"><br>
+        <input type="password" placeholder="Password" id="upass1"><br><br>
+        <button onclick="login()">Login</button>
+        <p onclick="register_page()">Not registered? Register</p><br>
+    </div>
+
+    <!-- Transaction -->
+    <center><h1></h1></center>
+    <div id="div3" style="visibility: hidden;">
+        <h3>Transaction</h3>
+        <input type="number" placeholder="Withdrawal amount" id="withdraw" onfocus="this.value=''"><button style="margin-left: 5px;" onclick="depit()">Withdraw</button>
+        <br><br>
+        <input type="number" placeholder="Deposit amount" id="deposit" onfocus="this.value=''"><button style="margin-left: 5px;" onclick="credit()">Deposit</button>
+        <br><br>
+        Balance : <p id="balance"></p>
+        <button id="logout" onclick="logout()">Logout</button>
+    </div>
+    <script src="bank.js"></script>
+</body>
+</html>

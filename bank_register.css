@@ -1,0 +1,71 @@
+body{
+    background-image: linear-gradient(to top right,grey,white,grey);
+    background-size: cover;
+}
+#div1,#div2{
+    margin: auto;
+    width: 350px;
+    height: fit-content;
+    border: 2px solid red;
+    border-bottom-right-radius: 180px;
+    border-top-left-radius: 180px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right,rgb(239, 58, 58),yellow,rgb(235, 63, 63));
+}
+#div2{
+    position: absolute;
+    top: 20%;
+    left: 29%;
+}
+input{
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 1000;
+    transition: 0.3s;
+}
+input:hover{
+    border-bottom: 3.5px solid rgb(0, 132, 255);
+    background-image: linear-gradient(orchid,white);
+}
+button{
+    border-radius: 8px;
+    padding-left: 10px;
+}
+button:hover{
+    background-image: radial-gradient(rgb(57, 57, 148),rgb(251, 6, 6),rgb(50, 50, 137));
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    font-size: 13px;
+    font-style: oblique;
+    font-weight: 1000;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+    font-size: large;
+}
+#div3{
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    width: 300px;
+    border-radius: 25px;
+    text-align: center;
+    border: 2px solid black;
+}
+#logout{
+    position: absolute;
+    top: 0px;
+    right: 7px;
+}
+p:hover{
+    font-size: large;
+    color: blue;
+    cursor: pointer;
+}
