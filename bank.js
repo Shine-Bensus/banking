@@ -103,7 +103,7 @@ function credit() // Deposit
         alert("Please enter a valid amount");
         return;
     }
-    balance = parseFloat(balance+deposit).toFixed(2);
+    balance = parseFloat(balance+deposit);
     document.getElementById("balance").innerHTML=balance;
 }
 
