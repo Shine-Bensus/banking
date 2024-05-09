@@ -103,7 +103,7 @@ function credit() // Deposit
         alert("Please enter a valid amount");
         return;
     }
-    balance = balance+deposit;
+    balance = balance + deposit;
     document.getElementById("balance").innerHTML=balance;
 }
 
